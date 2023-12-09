@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 #include "Actor.h"
 class Bird :
     public Actor
@@ -6,6 +7,7 @@ class Bird :
 private:
     //atributos
     float peso;
+    //vector<Coordenada> trayectoria;
 public:
     //constructor
     Bird();
@@ -16,4 +18,3 @@ public:
     //metodos
     
 };
-
