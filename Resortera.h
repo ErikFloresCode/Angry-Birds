@@ -5,12 +5,13 @@
 class Resortera
 {
 protected:
-    
     float fuerzaElastica;
-public:
-    // Constructor
+    //instancia unica
+    static Resortera* instancia;
+    // Constructor protegido para evitar instaciacion multiple
     Resortera(float fuerza);
-
+public:
+    static Resortera* getInstancia(float fuerza);
     // Otros métodos
     void lanzar(Bird* bird,float estiramiento,float angulo);
 };
